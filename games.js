@@ -117,11 +117,11 @@ function writetile() {
 function inittile(n) {
     tilelen = n;
     tileside = (canvas.width - tilespace * tilelen) / tilelen;
-    tile = new Array();
+    tile = [];
     var basetile = Math.floor(Math.random() * 2);
     turn = Math.floor(Math.random() * 2);
     for (var i = 0; i < tilelen; i++) {
-        tile[i] = new Array();
+        tile[i] = [];
         for (var j = 0; j < tilelen; j++) {
             /* set backcolor mainmenu */
             if (mode == 0) {
