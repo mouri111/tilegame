@@ -152,7 +152,7 @@ function reversetile(i, j) {
         for (let k = 0; k < 5; ++k) {
             let nx = i + dx[k];
             let ny = j + dy[k];
-            if ( 0 <= nx && nx < tilelen && 0 <= ny && ny < tilelen ) {
+            if (0 <= nx && nx < tilelen && 0 <= ny && ny < tilelen) {
                 tile[nx][ny] = tile[nx][ny] ^ 1;
             }
         }
@@ -163,7 +163,7 @@ function reversetile(i, j) {
         for (let k = 0; k < 9; ++k) {
             let nx = i + dx[k];
             let ny = j + dy[k];
-            if ( 0 <= nx && nx < tilelen && 0 <= ny && ny < tilelen ) {
+            if (0 <= nx && nx < tilelen && 0 <= ny && ny < tilelen) {
                 tile[nx][ny] = tile[nx][ny] ^ 1;
             }
         }
