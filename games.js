@@ -176,13 +176,7 @@ function reversetile(i, j) {
 
 /* check tile color */
 function checktile() {
-    var ans = true;
-    for (var i = 0; i < tilelen; i++) {
-        for (var j = 0; j < tilelen; j++) {
-            if (tile[0][0] != tile[i][j]) ans = false;
-        }
-    }
-    return ans;
+    return tile.every(xs => xs.every(x => x == tile[0][0]));
 }
 
 /* onclock function */
